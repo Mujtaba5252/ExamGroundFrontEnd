@@ -179,7 +179,7 @@ function SignUp() {
         const email_Handler=(e)=>{
             let item=e.target.value;
             
-            if(item.match("[a-zA-Z]@numl.edu.pk")!=null)
+            if(item.match("[a-zA-Z0-9]@numl.edu.pk")!=null)
             {
                 set_emailError(false);
                 set_email(item)
