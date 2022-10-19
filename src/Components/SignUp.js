@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo2 from "../Images/logo2.png";
 import { Link,useNavigate} from 'react-router-dom';
 import backButton from "../SVG/backButton.svg"
-import { Dialog } from "@mui/material";
+
 
 
 
@@ -179,7 +179,7 @@ function SignUp() {
         const email_Handler=(e)=>{
             let item=e.target.value;
             
-            if(item.match("[a-zA-Z0-9]@numl.edu.pk")!=null)
+            if(item.match("[a-zA-Z0-9]@numl.edu.pk")!=null || item.match("[a-zA-Z0-9]@bahria.edu.pk")!=null || item.match("[a-zA-Z0-9]@comsatt.edu.pk")!=null || item.match("[a-zA-Z0-9]@fast.edu.pk")!=null)
             {
                 set_emailError(false);
                 set_email(item)
