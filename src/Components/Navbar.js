@@ -36,7 +36,7 @@ function Navbar() {
               <li>
                 <Link to="/ContactUs"  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent  md:hover:text-blue-700 md:p-0 ">Contact Us</Link>
               </li>
-              
+             
               <div className="hidden md:flex pt-0 ">
               <button className="block py-2 pr-4 pl-3 mx-1 text-white border bg-indigo-600 border-indigo-600 hover:bg-transparent hover:text-indigo-600 rounded-3xl"
                onClick={()=>navigate('/SignUp')}>
@@ -49,6 +49,7 @@ function Navbar() {
               </div>
             </ul>
           </div>
+           {/* for mobile */}
           <div className={!nav ? "hidden" : " w-full   md:block md:w-auto"}>
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>

@@ -13,7 +13,7 @@ function Feature() {
       <Navbar />
       {/* 1st part */}
       <div className=" grid  h-auto  xmd:grid-cols-2 md:h-[480px] shadow-2xl bg-gradient-to-bl from-slate-200 to-gray-200">
-        <div className=" block px-6 sm:w-[500px] xmd:w-[550px] sm:h-[350px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[110px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <div className=" block px-6 sm:w-[200px] xmd:w-[550px] md:w-[550px] sm:h-[350px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[110px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <h1 className="font-bold mb-5 mt-14 text-gray-500 text-[22px] "> An intuitive user interface</h1>
           <div className="flex justify-start md:w-[500px] md:h-auto">
               
@@ -56,7 +56,7 @@ function Feature() {
                 
         </div>
         <div className=" xmd:block ">
-        <h1 className="font-bold mb-5 text-center sm:text-left text-gray-500 text-[22px] sm:mt-[150px] sm:ml-[120px]"> Choice of Exam</h1>
+        <h1 className="font-bold px-6 sm:px-0 mt-14 mb-5  sm:text-left text-gray-500 text-[22px] sm:mt-[150px] sm:ml-[120px]"> Choice of Exam</h1>
           <div className="flex justify-start md:w-[500px] md:h-auto sm:ml-[120px] ml-[20px]">
               
                 <p className="text-[16px] ">
@@ -91,7 +91,7 @@ function Feature() {
        <h2 className="text-white text-[18px] sm:text-[25px] font-playfair text-center">Start Creating Quiz <Link to="/SignUp" className="hover:underline font-semibold underline">CLICK HERE</Link></h2>
       </div>
       {/* 3rd part */}
-      <div className=" grid xmd:grid-cols-2 h-[500px] md:h-[480px] shadow-2xl bg-gradient-to-r from-slate-200 to-gray-200">
+      <div className=" grid xmd:grid-cols-2 h-auto md:h-[480px] shadow-2xl bg-gradient-to-r from-slate-200 to-gray-200">
         <div className=" block px-6 sm:w-[500px] xmd:w-[550px] sm:h-[350px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[110px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <h1 className="font-bold mb-5 mt-14 text-gray-500 text-[22px] "> Flexible customization options</h1>
           <div className="flex justify-center md:w-[500px] md:h-auto">
@@ -112,8 +112,8 @@ function Feature() {
           </div>
          
         </div>
-        <div className="xmd:block h-[900px] ">
-          <div className="flex justify-center md:w-auto h-[100px] md:h-[380px] xmd:mt-[90px] ">
+        <div className="xmd:block h-auto ">
+          <div className="flex justify-center md:w-auto w-auto h-[290px] md:h-[380px] xmd:mt-[90px] ">
                 <img
                 src={examConfigure}
                 alt="laptop pic "
@@ -123,10 +123,10 @@ function Feature() {
       </div>
       
 {/* 4th part */}
-      <div className=" grid xmd:grid-cols-2 h-[500px] md:h-[560px] shadow-2xl bg-gradient-to-bl from-slate-50 to-gray-50">
-        <div className=" block px-6 sm:w-[500px] xmd:w-[550px] sm:h-[400px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[90px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">   
+      <div className=" grid xmd:grid-cols-2 h-auto  md:h-[560px] shadow-2xl bg-gradient-to-bl from-slate-50 to-gray-50">
+        <div className="hidden sm:block sm:px-6 sm:w-[500px] xmd:w-[550px] h-[400px] sm:h-[400px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[90px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">   
         <div className="xmd:block ">
-          <div className="hidden sm:flex sm:justify-center md:w-auto md:h-[360px] xmd:mt-[10px] ">
+          <div className=" sm:flex sm:justify-center md:w-auto h-[400px] md:h-[360px] xmd:mt-[10px] ">
                 <img
                 src={questionType}
                 alt="laptop pic "
@@ -136,14 +136,14 @@ function Feature() {
                 
         </div>
         <div className="xmd:block ">
-        <h1 className="font-bold mb-5  text-gray-500 text-[22px] mt-[150px] sm:ml-[100px]"> Choice of question types and formatting options</h1>
-          <div className="flex justify-center md:w-[500px] md:h-auto sm:ml-[100px]">
+        <h1 className="font-bold mb-5 px-6 mt-[28px] text-gray-500 text-[22px] sm:mt-[150px] m sm:ml-[100px]"> Choice of question types and formatting options</h1>
+          <div className="flex ml-6 justify-center md:w-[500px] md:h-auto sm:ml-[100px]">
               
                 <p className=" text-[16px] ">
                 We offer various question type and formatting options to help you create examinations.
                 </p>
           </div>
-          <div className="flex text-[16px] sm:ml-[120px]">
+          <div className="flex px-6 text-[16px] ml-6 sm:ml-[120px]">
           <ul className="list-disc">
                   <li>Select Different Questions type </li>
                   <li>Multiple-choice Question</li>
@@ -152,6 +152,18 @@ function Feature() {
                 </ul>
           </div>
         </div>
+        <div className="sm:hidden block sm:px-6 sm:w-[500px] xmd:w-[550px] h-auto sm:h-[400px] bg-transparent rounded-lg md:ml-[50px] md:mt-[120px] xl:mt-[90px] xl:ml-[100px] sm:mt-[40px]  dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">   
+        <div className="xmd:block  h-auto">
+          <div className=" sm:flex sm:justify-center ml-[30px] md:w-auto w-[280px]   md:h-[360px] xmd:mt-[10px] ">
+                <img
+                src={questionType}
+                alt="laptop pic "
+                className=" m-1 shadow-2xl border-2 border-gray-400"></img>
+          </div>
+        </div> 
+                
+        </div>
+        
       </div>
 
       <Footer/>

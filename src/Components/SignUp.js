@@ -54,6 +54,8 @@ function SignUp() {
 
                 const result = await data.json();
                 console.log(result);
+                localStorage.setItem("user",JSON.stringify(result));
+                navigate("/SignIn")
 
     }
     else{
@@ -98,7 +100,7 @@ function SignUp() {
             let item=e.target.value;
             
             
-            if(item.match("^[1-9]{5}")!=null)
+            if(item.match("^[0-9]{5}")!=null)
             {
                 set_systemID_Error(false);
                 set_systemID(item);
@@ -115,7 +117,7 @@ function SignUp() {
             let item=e.target.value;
             
             
-            if(item.match("^[1-9]{5}")!=null)
+            if(item.match("^[0-9]{5}")!=null)
             {
                 set_EmployeeError(false);
                 set_employeeID(item);
